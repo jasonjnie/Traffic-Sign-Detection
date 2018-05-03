@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Traffic Sign Detection Based on Faster R-CNN
 by Jiaxi Nie, Rui Lan, Yuan Cheng 
 
@@ -21,5 +22,19 @@ Parameters to change:
 This program contains two parts: 
 1)In training process, it takes batches of training images with ground truth boxes and labels as input, trains the model by several epochs, then saves the trained model as .h5 file. 
 2)In testing process, it takes batches of testing images and the trained model as input, generates the predicted boxes with class label and confident score, saves the results as .png file.  
+=======
+# Traffic Sign Detection
+Traffic sign detection based on Faster R-CNN, implemented in Keras. The annotated dataset comes from German Traffic Sign Detection Benchmark.
+
+Notes:
+- config.py contains all settings for the train or test run. The anchor box sizes are selected from [8, 16, 32, 64] and anchor ratios from [1:1, 1:2, 2:1].
+- The base network shared by RPN and classifier are implemented in 2-layer FCnet, ZFnet and VGG16.
+- The RPN Stride depends on network structure and should be modified correspondingly if a new model/structure is employed.
+
+Example output:
+
+![ex1](https://imgur.com/vkH58TY.png)
+![ex2](https://imgur.com/y1cYou4.png)
+>>>>>>> 982362edde9ea5a11dd5039c25bf5dee3670978f
 
 
